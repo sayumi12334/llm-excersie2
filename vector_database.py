@@ -27,8 +27,9 @@ collection.add(
 # %%
 # Query for ChromaDB
 results = collection.query(
-    query_texts=["This is a query about CBC and BMI"]  
-   n_results= 3)
+    query_texts=["This is a query about CBC and BMI"],
+    n_results=3
+)
 print(results)
 
 # %%
