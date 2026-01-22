@@ -11,3 +11,7 @@ Use collection.query() and pass query_texts (the text you want to search with). 
 
 ### What are the other vector databases people use
 Pinecone, deeplake , vespa, Milvus , scaNN 
+
+# 2. RAG
+## why RAG
+RAG is used because LLMs on their own can generate outdated answers or answers based on unreliable resources.  With RAG, the system first retrieves relevant, reliable nformation ( from vector databases, documents, the  web etc) based on the user’s prompt, and then the LLM uses that retrieved information to generate the final response. This ensures that the answers are more accurate, more up to date, and more relevant to the user’s question
