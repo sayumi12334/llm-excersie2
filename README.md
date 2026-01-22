@@ -8,3 +8,6 @@ First, create a Chroma client, which acts as the connection to the Chroma databa
 
 ### How to query
 Use collection.query() and pass query_texts (the text you want to search with). Chroma converts  query_texts  into an embedding and compares it with the embeddings of the stored documents. Then set n_results to choose how many of the most similar matches you want to be returned.
+
+### What are the other vector databases people use
+Pinecone, deeplake , vespa, Milvus , scaNN 
