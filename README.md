@@ -1,1 +1,3 @@
-# llm-excersie2
+# 1. Vector Databases
+## Why vector databases ?
+Vector databases are used to find data based on similarity in meaning, not just exact keyword matching like in relational databases. This helps avoid missing the right results when the wording is different. A vector database stores data as embeddings (dense numeric vectors that represent text, images, audio, etc.), and it searches by comparing how close those vectors are using similarity measures (cosine similarity or Euclidean distance). Because of this, it can retrieve items that are semantically similar  or visually similar . This is  useful for things like image and video search, recommendation systems, and fraud detection.
