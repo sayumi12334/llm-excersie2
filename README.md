@@ -1,1 +1,1 @@
-# llm-excersie2
+# Vector Database and RAG
