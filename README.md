@@ -13,5 +13,8 @@ Use collection.query() and pass query_texts (the text you want to search with). 
 Pinecone, deeplake , vespa, Milvus , scaNN 
 
 # 2. RAG
-## why RAG
+## Why RAG
 RAG is used because LLMs on their own can generate outdated answers or answers based on unreliable resources.  With RAG, the system first retrieves relevant, reliable nformation ( from vector databases, documents, the  web etc) based on the user’s prompt, and then the LLM uses that retrieved information to generate the final response. This ensures that the answers are more accurate, more up to date, and more relevant to the user’s question
+
+##  Basic RAG  architecture
+RAG architecture is the set of components that work together to answer a user using both an LLM and an external knowledge store. A client (user/app) sends a question to a RAG framework (the controller). The framework turns the question into an embedding and performs semantic search in a vector database that stores your original content as embeddings (plus text and metadata). The vector database returns the most relevant chunks as contextual data. The framework then builds a prompt that includes the user’s question + the retrieved context and sends it to the LLM. The LLM generates an answer grounded in that provided context, and the framework may do post-processing (formatting, adding citations, filtering) before returning the final response to the client.
