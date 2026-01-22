@@ -6,3 +6,5 @@ Vector databases are used to find data based on similarity in meaning, not just 
 ### How to populate
 First, create a Chroma client, which acts as the connection to the Chroma database. Then, create a collection, which is where Chroma stores the documents, their embeddings , and metadata. To populate the collection, use collection.add() to insert the data by providing ids (unique string labels for each document), documents (the actual text you want to store), and metadatas(optional). 
 
+### How to query
+Use collection.query() and pass query_texts (the text you want to search with). Chroma converts  query_texts  into an embedding and compares it with the embeddings of the stored documents. Then set n_results to choose how many of the most similar matches you want to be returned.
