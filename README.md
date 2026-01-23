@@ -1,1 +1,3 @@
-# Vector Database and RAG
+# 1. Vector Databases
+## Why vector databases ?
+Vector databases are used to find data based on similarity in meaning, not just exact keyword matching like in relational databases. This helps avoid missing the right results when the wording is different while searching. A vector database stores data as embeddings (dense numeric vectors that represent text, images, audio, etc.), and it searches by comparing how close those vectors are using similarity measures (cosine similarity, Euclidean distance etc.). Because of this, it can retrieve items that are semantically similar  or visually similar . This is  useful for things like image and video search, recommendation systems, and fraud detection.
